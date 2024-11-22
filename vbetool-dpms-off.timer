@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for VBEtool DPMS off
+
+[Timer]
+Unit=betool-dpms-off.service
+OnCalendar=ON_CALENDAR
+
+[Install]
+WantedBy=timers.target

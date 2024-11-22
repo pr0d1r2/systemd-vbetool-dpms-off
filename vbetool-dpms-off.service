@@ -1,0 +1,13 @@
+[Unit]
+Description=VBEtool DPMS off
+
+[Service]
+ExecStart=vbetool dpms off
+SyslogIdentifier=vbetool-dpms-off
+Restart=no
+WorkingDirectory=/tmp
+TimeoutStopSec=30
+Type=oneshot
+
+[Install]
+WantedBy=vbetool-dpms-off.timer
